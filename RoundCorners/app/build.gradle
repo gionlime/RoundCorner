@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '32.0.0'
+    defaultConfig {
+        applicationId "com.kproduce.roundcorners.test"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 100
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':roundcorners')
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+}

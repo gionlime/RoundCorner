@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <make.more.r2d2.round_corner.RoundImage
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@mipmap/android"
+        app:round_bg_tint="@color/stateful"
+        app:round_bg_tint_mode="add"
+        app:round_radius="50dp"
+        app:round_radius_top_right="30dp"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <make.more.r2d2.round_corner.RoundText
+        style="@style/base_button"
+        android:clickable="true"
+        android:text="Try Click!"
+        app:round_bg="@color/stateful"
+        app:round_radius="15dp"
+        app:round_radius_top_left="6dp"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <make.more.r2d2.round_corner.RoundLinear
+        style="@style/base_button"
+        android:addStatesFromChildren="true"
+        app:round_bg="@drawable/stateful_gradient"
+        app:round_radius="15dp"
+        app:round_radius_bottom_left="6dp"
+        app:round_stroke_color="@color/stateful"
+        app:round_stroke_width="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Try Click!" />
+
+    </make.more.r2d2.round_corner.RoundLinear>
+
+    <make.more.r2d2.round_corner.RoundLinear
+        style="@style/base_button"
+        android:clickable="true"
+        android:enabled="false"
+        app:round_bg="@drawable/stateful_gradient"
+        app:round_radius="15dp"
+        app:round_radius_bottom_left="6dp"
+        app:round_radius_top_right="6dp"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <make.more.r2d2.round_corner.RoundLinear
+        style="@style/base_button"
+        app:round_bg="#99F"
+        app:round_radius_top="15dp"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <make.more.r2d2.round_corner.RoundLinear
+        style="@style/base_button"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="-2dp"
+        app:round_bg="#99F"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <make.more.r2d2.round_corner.RoundLinear
+        style="@style/base_button"
+        android:layout_marginTop="0dp"
+        app:round_bg="#99F"
+        app:round_radius_bottom="15dp"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <make.more.r2d2.round_corner.ShadowFrame
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            app:shadow_color="@color/stateful"
+            app:shadow_dx="4dp"
+            app:shadow_dy="4dp"
+            app:shadow_radius="8dp">
+
+            <make.more.r2d2.round_corner.RoundView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                app:round_bg="#68F8"
+                app:round_radius="20dp"
+                app:round_radius_bottom_left="8dp" />
+
+        </make.more.r2d2.round_corner.ShadowFrame>
+
+        <make.more.r2d2.round_corner.ShadowFrame
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            app:shadow_color="@color/stateful"
+            app:shadow_dx="4dp"
+            app:shadow_dy="4dp"
+            app:shadow_mode="shader"
+            app:shadow_radius="8dp">
+
+            <make.more.r2d2.round_corner.RoundView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                app:round_bg="#68F8"
+                app:round_radius="20dp"
+                app:round_radius_bottom_left="8dp" />
+
+        </make.more.r2d2.round_corner.ShadowFrame>
+
+    </LinearLayout>
+
+    <make.more.r2d2.round_corner.RoundCheck
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/gap"
+        android:checked="true"
+        android:clickable="true"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center_vertical"
+        android:text="checkbox"
+        app:round_bg="@color/stateful"
+        app:round_radius="20dp"
+        app:round_stroke_color="@color/colorAccent"
+        app:round_stroke_width="4dp" />
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <make.more.r2d2.round_corner.RoundRadio
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="left"
+            app:round_bg="@color/stateful"
+            app:round_radius_left="20dp"
+            app:round_stroke_color="@color/colorAccent"
+            app:round_stroke_width="4dp" />
+
+        <make.more.r2d2.round_corner.RoundRadio
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="center"
+            app:round_bg="@color/stateful"
+            app:round_stroke_color="@color/colorAccent"
+            app:round_stroke_width="4dp" />
+
+        <make.more.r2d2.round_corner.RoundRadio
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="right"
+            app:round_bg="@color/stateful"
+            app:round_radius_right="20dp"
+            app:round_stroke_color="@color/colorAccent"
+            app:round_stroke_width="4dp" />
+    </RadioGroup>
+</LinearLayout>
